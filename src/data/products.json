@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "slug": "bfgoodrich-all-terrain-tires",
+    "name": "BFGoodrich All-Terrain T/A KO2",
+    "short": "Durable all-terrain tyres for mixed road and rugged trails. Excellent tread life and tough sidewalls.",
+    "img": "/images/gallery3.jpg",
+    "category": "Tyres & Wheels",
+    "description": "The legendary BFGoodrich All-Terrain tyres deliver serious offroad performance and reliability. Our fitment service includes professional mounting, balancing, and wheel alignment to ensure your vehicle is ready for any Zambian adventure."
+  },
+  {
+    "id": 2,
+    "slug": "heavy-duty-rear-bumper-steel",
+    "name": "Heavy-Duty Steel Rear Bumper",
+    "short": "Custom-fabricated steel bumper with integrated recovery points and tow hitch receiver.",
+    "img": "/images/gallery1.jpg",
+    "category": "Bumpers & Recovery",
+    "description": "Protect your vehicle and enhance its capability with a custom heavy-duty steel rear bumper. Each bumper is precision-engineered, powder-coated for durability, and fitted with robust D-shackle mounts for confident recovery operations."
+  },
+  {
+    "id": 3,
+    "slug": "2-inch-lift-kit-full-install",
+    "name": "2-Inch Suspension Lift Kit",
+    "short": "Complete lift kit with performance shocks, professional alignment, and a full safety check.",
+    "img": "/images/gallery2.jpg",
+    "category": "Suspension",
+    "description": "Gain ground clearance and improve off-road articulation with a 2-inch lift kit, expertly installed by our team. The package includes performance shocks, springs, and a comprehensive suspension alignment and tuning for optimal handling on and off the road."
+  }
+]
