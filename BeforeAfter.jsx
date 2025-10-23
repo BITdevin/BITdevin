@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const transformations = [
   {
-    before: "/images/fender-new.jpg",
-    after: "/images/fender-old.jpg",
+    before: "/images/fender-new.jpg", // swapped
+    after: "/images/fender-old.jpg",  // swapped
   },
 ];
 
@@ -41,41 +41,18 @@ export default function BeforeAfter() {
         padding: "var(--space-3xl) 0",
       }}
     >
-      <div className="container" style={{ maxWidth: "1200px", padding: "0 1rem", margin: "0 auto" }}>
+      <div className="container">
         {/* Section Header */}
         <header className="section-header" style={{ textAlign: "center" }}>
-          <h2
-            className="section-title"
-            style={{
-              color: "var(--primary)",
-              fontSize: "var(--text-2xl)",
-              fontWeight: "700",
-            }}
-          >
+          <h2 className="section-title" style={{ color: "var(--primary)", fontSize: "var(--text-2xl)", fontWeight: "700" }}>
             Transformation Showcase
           </h2>
-          <p
-            className="section-subtitle"
-            style={{
-              color: "var(--text-secondary)",
-              maxWidth: "700px",
-              margin: "0.75rem auto 2rem",
-            }}
-          >
+          <p className="section-subtitle" style={{ color: "var(--text-secondary)", maxWidth: "600px", margin: "0.75rem auto 2rem" }}>
             See our precision work — before and after your 4×4 upgrade.
           </p>
 
           {/* Before/After Toggle Buttons */}
-          <div
-            className="toggle-buttons"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              flexWrap: "wrap",
-              gap: "1rem",
-              marginBottom: "2rem",
-            }}
-          >
+          <div className="toggle-buttons" style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "1rem", marginBottom: "2rem" }}>
             <button
               className={`nav-button ${viewMode === "before" ? "active" : ""}`}
               onClick={() => setViewMode("before")}
@@ -142,7 +119,7 @@ export default function BeforeAfter() {
               overflow: "hidden",
               borderRadius: "16px",
               boxShadow: "0 4px 20px rgba(0,0,0,0.15)",
-              maxWidth: "100%",
+              maxWidth: "900px",
               margin: "0 auto",
             }}
           >
@@ -150,10 +127,10 @@ export default function BeforeAfter() {
               src={viewMode === "before" ? current.before : current.after}
               srcSet={
                 viewMode === "before"
-                  ? "/images/fender-new.jpg 640w, /images/fender-new.jpg 1280w, /images/fender-new.jpg 1920w"
-                  : "/images/fender-old.jpg 640w, /images/fender-old.jpg 1280w, /images/fender-old.jpg 1920w"
+                  ? "/images/fender-new.jpg 640w, /images/fender-new.jpg 1280w"
+                  : "/images/fender-old.jpg 640w, /images/fender-old.jpg 1280w"
               }
-              sizes="(max-width: 1100px) 100vw, 1100px"
+              sizes="(max-width: 768px) 100vw, 800px"
               alt={viewMode === "before" ? "Toyota Land Cruiser — Before" : "Toyota Land Cruiser — After"}
               loading="lazy"
               style={{
